@@ -1,0 +1,138 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #0d0d1a13;
+  backdrop-filter: blur(8px);
+}
+
+
+.navbar-left .navbar-logo {
+  font-family: pixelify sans, sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--gold);
+
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: var(--gold);
+  transform: translateY(-6px);
+}
+
+.dark-mode-btn {
+  background-color: transparent;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding-top: 2px;
+  color: var(--gold);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: pixelify sans, sans-serif;
+}
+
+.dark-mode-btn:hover {
+  background-color: var(--gold);
+  color: #0d0d1a;
+}
+
+
+.cursor {
+  animation: cursorblink 1s infinite;
+  color: var(--gold);
+}
+
+@keyframes cursorblink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--gold);
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  flex-shrink: 0;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .navbar-left .navbar-logo {
+  font-size: 20px;
+
+}
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-right {
+    gap: 12px;
+  }
+
+  .navbar-links {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 65%;
+    height: 100vh;
+    background: #0d0d1a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.3s ease;
+    z-index: 999;
+    border-left: 2px solid #2a2d45;
+  }
+
+  .navbar-links.open {
+    display: flex;
+    right: 0;
+  }
+
+  .navbar-links li a {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,173 @@
+.hero{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.hero-main h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  display: inline-block;
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--purple);
+  color: var(--purple);
+}
+
+.btn-outline:hover {
+  background: var(--purple);
+  color: #fff;
+  box-shadow: 4px 4px 0px var(--gold);
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: #0d0f1a;
+  border-color: var(--gold);
+}
+
+.btn-primary:hover {
+  box-shadow: 4px 4px 0px var(--purple);
+  transform: translate(-2px, -2px);
+}
+
+
+.typewriter {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1.2rem;
+  color: var(--text);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--text);
+  width: 0;
+  animation: 
+    typing 2s steps(19) forwards,
+    textBlink 0.8s step-end infinite;
+  animation-delay: 0.5s;
+}
+
+.nameTypewriter {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1.2rem;
+  color: var(--text);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: 
+    nameTyping 2s steps(14) forwards,
+    blink 0.8s step-end ;
+  animation-delay: 0.5s;
+  
+}
+
+@keyframes nameTyping {
+  from { width: 0 }
+  to { width: 15ch }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 19ch }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: var(--gold) }
+  50% { border-color: transparent }
+}
+
+@keyframes textBlink {
+  0%, 100% { border-color: var(--text) }
+  50% { border-color: transparent }
+}
+
+.hero-main p {
+    font-size: 1.2rem;
+    color: var(--muted);
+}
+
+
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-highlight{
+    color: var(--gold);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 16px;
+  }
+
+  .hero-main h1 {
+    font-size: 2rem;
+  }
+
+  .typewriter {
+    font-size: 0.9rem;
+    width: 0;
+    animation:
+      typing 2s steps(19) forwards,
+      textBlink 0.8s step-end infinite;
+  }
+
+  .nameTypewriter {
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .btn {
+    width: 180px;
+    text-align: center;
+    font-size: 0.70rem;
+  }
+}
+

@@ -1,0 +1,183 @@
+.projects-page {
+  min-height: 100vh;
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.project-card {
+  background: #1f2235;
+  border: 2px solid #2a2d45;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: var(--purple);
+  box-shadow: 6px 6px 0px var(--gold);
+  transform: translate(-3px, -3px);
+}
+
+/* image */
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.02);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 15, 26, 0.85);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.overlay-btn {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 0.55rem;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  background: var(--purple);
+  color: #fff;
+  border: 2px solid var(--purple);
+}
+
+.overlay-btn.outline {
+  background: transparent;
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.overlay-btn:hover {
+  transform: translateY(-2px);
+}
+
+.project-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--gold);
+  color: #0d0f1a;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 0.45rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* info */
+.project-info {
+  padding: 24px;
+}
+
+.project-title {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.project-description {
+  font-size: 0.90rem;
+  color: #aaa;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* tech stack */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-tag {
+  background: rgba(171, 91, 236, 0.15);
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 0.67rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+/* links */
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+/* more projects */
+.more-projects {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid #2a2d45;
+}
+
+.more-text {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 0.6rem;
+  color: var(--muted);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 60px 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .btn {
+    text-align: center;
+  }
+}

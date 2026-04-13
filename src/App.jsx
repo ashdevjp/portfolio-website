@@ -1,4 +1,6 @@
 import "./App.css"
+import { useState,useEffect } from "react"
+import { PacmanLoader } from "react-spinners"
 import { BrowserRouter , Routes , Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
@@ -11,6 +13,25 @@ import bg from "./assets/omori-bg.JPG"
 
 
 const App = () => {
+ const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 2700)
+    return () => clearTimeout(timer)
+  }, [])
+
+  // show loader while loading is true
+  if (loading) {
+    return (
+      <div className="loader-screen">
+        <PacmanLoader color="#f7c948" size={20} />
+        <p className="loader-text">LOADING...</p>
+      </div>
+    )
+  }
+    else{
   return (
     <BrowserRouter className="app" >
       <div className="app-bg" style={{ backgroundImage: `url(${bg})` }}></div>
@@ -25,6 +46,7 @@ const App = () => {
       <Footer />
     </BrowserRouter>
   )
+}
 }
 
 export default App

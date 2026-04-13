@@ -30,3 +30,31 @@
   position: relative;
   z-index: 100;
 }
+
+.loader-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d0f1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  z-index: 9999;
+}
+
+.loader-text {
+  font-family: 'Pixelify' sans-serif;
+  font-size: 1rem;
+  color: #f7c948;
+  letter-spacing: 4px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}

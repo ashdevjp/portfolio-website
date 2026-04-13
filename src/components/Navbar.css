@@ -6,8 +6,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #0d0d1a13;
-  backdrop-filter: blur(8px);
+  background-color: #0d0d1a34;
+  backdrop-filter: blur(3px);
 }
 
 

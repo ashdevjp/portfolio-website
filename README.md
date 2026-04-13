@@ -5,7 +5,7 @@ Features a scrolling background, pixel fonts, Retro styled
 sections and a Pac-Man loader.
 
 ## Live Demo
-[View Portfolio](https://ashish-portfolio.vercel.app)
+[View Portfolio](https://ashish-portfoliosite.vercel.app/)
 
 ## Screenshots
 ![Portfolio Screenshot](screenshot.png)

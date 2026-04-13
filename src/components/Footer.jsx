@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-content">
         <p className="footer-main">
-          Crafted by Ashish <span className="heart">💜</span>
+          Crafted by Ashish <span className="heart">💛</span>
         </p>
         <p className="footer-sub"> Built with React. &middot; Ashish.&copy; {new Date().getFullYear()} All rights reserved.</p>
 

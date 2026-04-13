@@ -1,16 +1,31 @@
-# React + Vite
+# Ashish's Portfolio👾
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A retro themed personal portfolio built with React.
+Features a scrolling background, pixel fonts, Retro styled
+sections and a Pac-Man loader.
 
-Currently, two official plugins are available:
+## Live Demo
+[View Portfolio](https://ashish-portfolio.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Screenshots
+![Portfolio Screenshot](screenshot.png)
 
-## React Compiler
+## Built With
+- React
+- React Router
+- react-spinners
+- CSS3
+- Vite
+- Pixelify Sans (Google Fonts)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Sections
+- Home — Hero with typewriter animation
+- About — RPG character sheet style
+- Skills — Interactive hover reveal skill cards
+- Projects — Full detail project cards
+- Contact — Contact form with social links
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+1. Clone the repo
+2. Run `npm install`
+3. Run `npm run dev`

@@ -1,6 +1,7 @@
 import "./Projects.css"
 import weatherImg from "../assets/weather-app.png"
 import movieImg from "../assets/movie-finder.png"
+import AmazonImg from "../assets/amazon-clone.png"
 
 const projects = [
   {
@@ -23,6 +24,17 @@ const projects = [
     github: "https://github.com/ashdevjp/movie-finder",
     tag: "FEATURED",
   },
+  {
+    title: "Amazon E-Commerce Clone",
+    description:
+      "Fully responsive Amazon UI clone with product listings, functional cart, and mobile-first design made with vanilla Javascript ,HTML and CSS. Deployed on Vercel.",
+    image: AmazonImg,
+    tech: ["Javascript", "HTML", "CSS3"],
+    live: "https://amazon-project-dun.vercel.app/",
+    github: "https://github.com/ashdevjp/Javascript_Projects",
+    tag: "OTHERS",
+
+  }
 ]
 
 const ProjectCard = ({ project }) => {
@@ -98,7 +110,7 @@ const Projects = () => {
       </div>
 
       <div className="more-projects">
-        <p className="more-text">More projects coming soon...</p>
+        <p className="more-text">Check out my Github</p>
         <a
           href="https://github.com/ashdevjp"
           target="_blank"

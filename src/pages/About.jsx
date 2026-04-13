@@ -48,7 +48,7 @@ const About = () => {
           <div className="about-text">
             <p>
               Hey! I'm Ashish , a self-taught frontend developer from Chennai .
-              I have a BSc in Electronics but found my passion in building things people can actually
+              I have a BSc in Electronics and Communication Science but found my passion in building things people can actually
               see and use on the web.
             </p>
             <br />
@@ -91,7 +91,7 @@ const About = () => {
               LinkedIn
             </a>
             <a
-              href="./Ashish-John-Paul-resume.pdf"
+              href="./Ashish-John-Paul-Resume.pdf"
               download
               className="btn btn-primary"
             >

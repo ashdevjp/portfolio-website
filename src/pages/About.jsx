@@ -91,7 +91,7 @@ const About = () => {
               LinkedIn
             </a>
             <a
-              href="./Ashish-John-Paul-Resume.pdf"
+              href="/Ashish-John-Paul-Resume.pdf"
               download
               className="btn btn-primary"
             >

@@ -13,7 +13,7 @@ const About = () => {
           <div className="photo-frame">
             <img src={photo} alt="Ashish John Paul" />
             <div className="photo-decoration">
-              <span>Developer</span>
+              <span>Frontend Developer</span>
             </div>
           </div>
         </div>
@@ -47,16 +47,16 @@ const About = () => {
           
           <div className="about-text">
             <p>
-              Hey! I'm Ashish , a self-taught frontend developer from Chennai .
-              I have a BSc in Electronics and Communication Science but found my passion in building things people can actually
-              see and use on the web.
+              Hey! I'm Ashish , a self-taught frontend developer.
+              I have a BSc in Electronics and Communication Science but found my passion 
+              in building things people can actually see and use on the web.
             </p>
             <br />
             <p>
               I completed Angela Yu's Full-Stack Bootcamp on Udemy 
               and have hands-on experience building dynamic, 
-              responsive web applications using HTML, CSS, 
-              JavaScript and React , all deployed and live on Vercel.
+              responsive web applications using Javascript, CSS 
+              and React , all deployed and live on Vercel.
             </p>
             <br />
             <p>

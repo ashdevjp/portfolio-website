@@ -2,8 +2,19 @@ import "./Projects.css"
 import weatherImg from "../assets/weather-app.png"
 import movieImg from "../assets/movie-finder.png"
 import AmazonImg from "../assets/amazon-clone.png"
+import designImg from "../assets/design-agency.png"
 
 const projects = [
+  {
+    title: "MovieFinder",
+    description:
+      "A full featured movie and TV show discovery platform. Search, browse trending and top rated content, view full detail pages with embedded trailers, cast sections, and pagination. Fully mobile responsive.",
+    image: movieImg,
+    tech: ["React", "React Router", "TMDB API", "CSS3"],
+    live: "https://ashish-moviefinder.vercel.app",
+    github: "https://github.com/ashdevjp/movie-finder",
+    tag: "FEATURED",
+  },
   {
     title: "Pixel Weather App",
     description:
@@ -15,13 +26,13 @@ const projects = [
     tag: "FEATURED",
   },
   {
-    title: "MovieFinder",
+    title: "Design Agency Homepage",
     description:
-      "A full featured movie and TV show discovery platform. Search, browse trending and top rated content, view full detail pages with embedded trailers, cast sections, and pagination. Fully mobile responsive.",
-    image: movieImg,
-    tech: ["React", "React Router", "TMDB API", "CSS3"],
-    live: "https://ashish-moviefinder.vercel.app",
-    github: "https://github.com/ashdevjp/movie-finder",
+      "A modern, responsive homepage for a design agency with smooth typewriting animations floating animation on home page and a clean layout. Built with Next.js and deployed on Vercel.",
+    image: designImg,
+    tech: ["Next.js", "React", "CSS3"],
+    live: "https://forxeldesign.vercel.app/",
+    github: "https://github.com/ashdevjp/design-agency-site",
     tag: "FEATURED",
   },
   {

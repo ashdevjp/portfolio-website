@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom"
+import profile from "../assets/ash-omori.png"
 import "./Hero.css"
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-main">
+        <div className="profile-frame">
+          <img src={profile} alt="Ashish John Paul" />
+          <div className="profile-decoration">
+            <span>Frontend Developer</span>
+          </div>
+          </div>
         <div className="name">
           <h1>Hi, I'm</h1>
           <h1 className="name-highlight nameTypewriter">

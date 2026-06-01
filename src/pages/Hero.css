@@ -19,7 +19,7 @@
 
 .profile-frame {
   position: relative;
-  width: 260px;
+  width: 210px;
   padding: 10px;
 }
 
@@ -36,7 +36,7 @@
 
 .profile-frame .profile-hover {
   position: absolute;
-  width: 240px;
+  width: 190px;
   inset: 10px; /* same padding as frame */
   top: 10px;
   left: 10px;
@@ -54,13 +54,13 @@
 
 .profile-decoration {
   position: absolute;
-  bottom: 235px;
+  bottom: 190px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--gold);
   color: #0d0f1a;
   font-family: 'Pixelify Sans', sans-serif;
-  font-size: 0.90rem;
+  font-size: 0.80rem;
   padding: 3px 12px;
   border: 3px solid black;
   border-radius: 4px;

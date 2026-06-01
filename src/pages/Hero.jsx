@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
-import profile from "../assets/ash-omori.png"
+import profileBase from "../assets/ash-base.png"
+import profileHover from "../assets/ash-smile.png"
+
 import "./Hero.css"
 
 const Hero = () => {
@@ -7,7 +9,8 @@ const Hero = () => {
     <div className="hero">
       <div className="hero-main">
         <div className="profile-frame">
-          <img src={profile} alt="Ashish John Paul" />
+          <img className="profile-base" src={profileBase} alt="Ashish Omori style image base" />
+          <img className="profile-hover" src={profileHover} alt="Ashish Omori style image hover" />
           <div className="profile-decoration">
             <span>Frontend Developer</span>
           </div>

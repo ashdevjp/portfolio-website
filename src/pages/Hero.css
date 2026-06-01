@@ -23,12 +23,33 @@
   padding: 10px;
 }
 
+
+
 .profile-frame img {
   width: 100%;
   border-radius: 5px;
   border: 2px solid var(--purple);
   box-shadow: 0px 0px 0px 3px var(--gold);
+  transition: opacity 0.2s ease;  
   display: block;
+}
+
+.profile-frame .profile-hover {
+  position: absolute;
+  width: 240px;
+  inset: 10px; /* same padding as frame */
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.profile-frame:hover .profile-hover {
+  opacity: 1;
+}
+
+.profile-frame:hover .profile-base {
+  opacity: 0;
 }
 
 .profile-decoration {

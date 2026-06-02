@@ -7,20 +7,22 @@ import {
   SiVite, SiVercel 
 } from "react-icons/si"
 import { TbApi } from "react-icons/tb"
+import { SiNextdotjs } from "react-icons/si";
 import "./Skills.css"
 
 const skills = [
   { name: "HTML5", icon: <FaHtml5 />, level: 85, color: "#e34f26" },
   { name: "CSS3", icon: <FaCss3Alt />, level: 80, color: "#264de4" },
   { name: "JavaScript", icon: <FaJs />, level: 70, color: "#f7df1e" },
-  { name: "React", icon: <FaReact />, level: 65, color: "#61dafb" },
+  { name: "React", icon: <FaReact />, level: 75, color: "#61dafb" },
   { name: "Bootstrap", icon: <FaBootstrap />, level: 65, color: "#7952b3" },
   { name: "Git", icon: <FaGitAlt />, level: 70, color: "#f05032" },
   { name: "GitHub", icon: <FaGithub />, level: 70, color: "#ffffff" },
-  { name: "Vite", icon: <SiVite />, level: 65, color: "#646cff" },
-  { name: "REST APIs", icon: <TbApi />, level: 65, color: "#ab5bec" },
-  { name: "Vercel", icon: <SiVercel />, level: 70, color: "#ffffff" },
-  { name: "VS Code", icon: <FaCode />, level: 90, color: "#007acc" },
+  { name: "Vite", icon: <SiVite />, level: 60, color: "#646cff" },
+  { name: "REST APIs", icon: <TbApi />, level: 60, color: "#ab5bec" },
+  { name: "Vercel", icon: <SiVercel />, level: 60, color: "#ffffff" },
+  { name: "VS Code", icon: <FaCode />, level: 80, color: "#007acc" },
+  { name: "Next.js", icon: <SiNextdotjs />, level: 50, color: "#000000" },
 ]
 
 const SkillCard = ({ skill }) => {

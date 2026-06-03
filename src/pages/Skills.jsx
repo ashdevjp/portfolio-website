@@ -68,9 +68,21 @@ const Skills = () => {
       <div className="currently-learning">
         <h3 className="learning-title">&gt; CURRENTLY LEARNING</h3>
         <div className="learning-tags">
-          <span className="tag done">React Router ✓</span>
-          <span className="tag progress">TypeScript →</span>
-          <span className="tag next">Tailwind CSS ↓</span>
+          <span className="tag done" alt="Completed">
+            React Router ✓
+          </span>
+          <span className="tag progress" alt="In Progress">
+            TypeScript →
+          </span>
+          <span className="tag progress" alt="In Progress">
+            Tailwind CSS  →
+          </span>
+          <span className="tag progress" alt="In Progress">
+            Next.js  →
+          </span>
+          <span className="tag next" alt="Next">
+            Node.js↓
+          </span>
         </div>
       </div>
     </section>
